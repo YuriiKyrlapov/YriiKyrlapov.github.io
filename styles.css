@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.resume-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hero {
+    background: linear-gradient(to right, #4caf50, #008cba);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .photo {
+    width: 100px; /* Задаем ширину кружка */
+    height: 100px; /* Задаем высоту кружка */
+    border-radius: 50%; /* Делаем его круглым */
+    overflow: hidden; /* Убираем выступающие части фото */
+    background-color: #fff; /* Фон, если изображение не загружено */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .photo img {
+    width: 100%; /* Фото заполняет кружок */
+    height: 100%; /* Фото заполняет кружок */
+    object-fit: cover; /* Убирает растяжение изображения */
+}
+
+.hero .header-info {
+    flex-grow: 1;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.hero h2 {
+    margin: 5px 0 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.hero p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.hero a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    margin-bottom: 10px;
+    color: #008cba;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.summary p, .projects p, .education li, .languages li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.skill-grid div {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.skill-grid h4 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.skill-grid p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
